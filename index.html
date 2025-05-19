@@ -1,67 +1,181 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CAP Garland, LLC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>L and H Guyumjan Inc</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #f0f0f0;
-      color: #333;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fefefe;
+      color: #222;
     }
+
     header {
-      background-color: #003366;
+      background: url('https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0') no-repeat center center/cover;
+      height: 100vh;
       color: white;
-      padding: 30px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      padding: 0 30px;
+    }
+
+    header h1 {
+      font-size: 3.2rem;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 4px #000;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      text-shadow: 1px 1px 2px #000;
+    }
+
+    .cta-button {
+      margin-top: 25px;
+      padding: 12px 28px;
+      background-color: gold;
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
       text-align: center;
     }
-    section {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #134e4a;
     }
-    h1, h2 {
-      color: #003366;
-    }
-    .contact {
-      background: #fff;
-      padding: 20px;
-      border-left: 5px solid #003366;
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
       margin-top: 30px;
     }
+
+    .card {
+      flex: 1 1 280px;
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      height: 160px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .gallery img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .testimonial {
+      font-style: italic;
+      color: #555;
+    }
+
     footer {
-      background-color: #003366;
+      background: #134e4a;
       color: white;
       text-align: center;
-      padding: 15px;
-      margin-top: 50px;
+      padding: 30px 20px;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>CAP Garland, LLC</h1>
-    <p>Private Investment Fund</p>
-  </header>
 
-  <section>
-    <h2>About Us</h2>
-    <p>CAP Garland, LLC is a Washington-based private investment fund focused on delivering value through diversified investment strategies.</p>
+<header>
+  <h1>L and H Guyumjan Inc</h1>
+  <p>Innovative Solutions. Professional Results.</p>
+  <p>📞 951-635-3427 | 📧 admin@lhguyumjan.shop</p>
+  <a href="mailto:admin@lhguyumjan.shop" class="cta-button">CONTACT US</a>
+</header>
 
-    <h2>Contact</h2>
-    <div class="contact">
-      <p><strong>Address:</strong> 915 W 2nd Ave, Spokane, WA 99201</p>
-      <p><strong>Email:</strong> <a href="mailto:ryanberg@capgarland.shop">ryanberg@capgarland.shop</a></p>
-      <p><strong>Phone:</strong> (509) 822-3850</p>
+<section>
+  <h2>About Us</h2>
+  <p>L and H Guyumjan Inc provides professional and dynamic services to modern clients seeking reliability, growth, and innovation.</p>
+</section>
+
+<section>
+  <h2>Our Services</h2>
+  <div class="cards">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1444723121867-7a241cacace9?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Service 1">
+      <h3>Business Solutions</h3>
+      <p>Customized plans for success and scalability.</p>
     </div>
-  </section>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1541336032412-2048a678540d?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Service 2">
+      <h3>Consulting</h3>
+      <p>Experienced insight to boost your operations.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1449157291145-7efd050a4d0e?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Service 3">
+      <h3>Project Management</h3>
+      <p>Timely, efficient, and goal-focused execution.</p>
+    </div>
+  </div>
+</section>
 
-  <footer>
-    &copy; 2025 CAP Garland, LLC. All rights reserved.
-  </footer>
+<section>
+  <h2>Gallery</h2>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Image 1">
+    <img src="https://images.unsplash.com/photo-1444723121867-7a241cacace9?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Image 2">
+    <img src="https://images.unsplash.com/photo-1541336032412-2048a678540d?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Image 3">
+    <img src="https://images.unsplash.com/photo-1449157291145-7efd050a4d0e?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Image 4">
+  </div>
+</section>
+
+<section>
+  <h2>Testimonials</h2>
+  <p class="testimonial">"Their consulting helped us achieve results faster than expected."</p>
+  <p class="testimonial">"Reliable team. Great support and service. Highly recommended."</p>
+</section>
+
+<section>
+  <h2>Contact</h2>
+  <p>📧 admin@lhguyumjan.shop</p>
+  <p>📞 951-635-3427</p>
+  <a href="mailto:admin@lhguyumjan.shop" class="cta-button">Email Us</a>
+</section>
+
+<footer>
+  &copy; 2025 L and H Guyumjan Inc. All rights reserved.
+</footer>
+
 </body>
 </html>
